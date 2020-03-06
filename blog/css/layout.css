@@ -1,0 +1,224 @@
+    * {
+    box-sizing: border-box;
+    }
+    body {
+    font-family: arial;
+    padding: 0px;
+    background-color: #44434e;
+    margin: 0;
+
+    }
+
+/* estruturas do site*/
+    .header {
+    padding: 30px;
+    text-align: center;
+    background-color: #44434e;
+    color: #fff;
+    }
+
+    .header h1{
+    font-size: 50px;
+    }
+    .nav{
+    overflow: hidden;
+    background-color: #30303e;
+    }
+
+    .nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .nav a:hover{
+    background-color: #272731;
+    color: #ffffff;
+    }
+
+    .nav .linha-direita {
+    float: right;
+    }
+
+    .leftCol {
+    float: left;
+    width: 75%;
+    }
+    .fakeimg{
+        background-color: #000000;
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .fakeimg h4{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       color: #ffffff;
+       background: #000000;
+       margin: 0;
+       padding: 5px
+    }
+    #fakeimg1{
+        background: url('img/darlansushi.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    #fakeimg2{
+        background: url('img/fakeimg2.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(0.8);
+    }
+    #fakeimg3{
+        background: url('img/fakeimg2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(0.8);
+    }
+    #fakeimg4{
+        background: url('img/fakeimg4.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(0.8);
+    }
+    .links{
+        color: #a09f9f;
+        text-decoration: none;
+    }
+    .links:hover{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .card{
+    background-color: #30303e;
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    border-radius: 4px;
+    }
+    .rightCol{
+    float: left;
+    width: 25%;
+    background-color: #44434e;
+    padding-left: 20px;
+    }
+    .footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #30303e;
+    margin-top: 20px;
+    }
+    .footer p{
+        margin: 0;
+        color: #fff
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /*- card main -*/
+    .divPost{
+        height: 50vh;
+        width: 100%;
+        background-image: url('img/img1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sectionComent{
+        text-align: justify;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .gridCard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .gridCard .cards{
+        width: calc(95% / 2);
+        background-color: #30303e;
+        border-radius: 4px;
+        margin: 15px 0px;
+    }
+    .cardLegenda{
+        color: #ffffff;
+        line-height: 25px;
+        padding: 10px;
+    }
+    .cardLegenda h3{
+        letter-spacing: 2px
+    }
+    .postagemData{
+        margin: 0;
+        font-size: 12px;
+        color: rgb(168, 168, 168);
+    }
+    .imgCard{
+        width: 100%;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #img1{
+        background-image: url('img/img5.jpg');
+    }
+    #img2{
+        background-image: url('img/img2.jpg');
+    }
+    #img3{
+        background-image: url('img/img3.jpg');
+    }
+    #img4{
+        background-image: url('img/img4.jpg');
+    }
+    /*galeria de fotos*/
+    .ftogaleria a img{
+        width: 200px;
+        height: 200px;
+    }
+    .gridFotos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .fotos{
+        padding: 20px;
+    }
+    .fotos h3{
+        color: #fff
+    }
+    @media screen and (max-width: 800px) {
+    .leftCol, .rightCol{
+        width: 100%;
+        padding: 0;
+    }
+    .gridCard .cards{
+        width: 100%;
+        margin: 20px 0px;
+    }
+}
+    @media screen and (max-width: 400px) {
+    .nav a {
+        float: none;
+        width: 100%;
+    }
+}
